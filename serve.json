@@ -1,0 +1,15 @@
+{
+  "public": "_site",
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/build/"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/build/**",
+      "destination": "/build/index.html"
+    }
+  ]
+}

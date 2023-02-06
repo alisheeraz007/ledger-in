@@ -1,0 +1,428 @@
+// 3rd-party Plugins
+@import "~highlight.js/styles/googlecode.css";
+@import "~perfect-scrollbar/css/perfect-scrollbar.css";
+
+// Theme Styles
+@import "./_metronic/_assets/sass/style.react.scss";
+
+// Default Layout themes
+@import "./_metronic/_assets/sass/themes/layout/header/base/light.scss";
+@import "./_metronic/_assets/sass/themes/layout/header/menu/light.scss";
+@import "./_metronic/_assets/sass/themes/layout/brand/dark.scss";
+@import "./_metronic/_assets/sass/themes/layout/aside/dark.scss";
+
+// Header themes
+// Light
+//@import "./_metronic/_assets/sass/themes/layout/header/base/light.scss";
+// Dark
+// @import "./_metronic/_assets/sass/themes/layout/header/base/dark.scss";
+
+// Header Menu themes
+// Light
+//@import "./_metronic/_assets/sass/themes/layout/header/menu/light.scss";
+// Dark
+// @import "./_metronic/_assets/sass/themes/layout/header/menu/dark.scss";
+
+// Brand themes
+.brand-dark {
+  @import "./_metronic/_assets/sass/themes/layout/brand/dark.scss";
+}
+
+// Light
+.brand-light {
+  @import "./_metronic/_assets/sass/themes/layout/brand/light.scss";
+}
+
+// Aside themes
+// Dark
+//@import "./_metronic/_assets/sass/themes/layout/aside/dark.scss";
+// Light
+// @import "./_metronic/_assets/sass/themes/layout/aside/light.scss";
+
+// .example-highlight {
+//   padding: 0rem 1.5rem 1.75rem !important;
+// }
+
+.example-highlight > pre {
+  background: none transparent !important;
+  margin: 0 !important;
+  padding-top: 0.5rem;
+
+  code {
+    overflow-y: auto;
+    display: block;
+
+    span {
+      background: none transparent !important;
+    }
+  }
+}
+
+.json > pre {
+  background: none #fff !important;
+}
+
+.example-code > .json {
+  background: none #fff !important;
+}
+
+.symbol.symbol-45 > svg {
+  width: 100%;
+  max-width: 45px;
+  height: 45px;
+}
+
+.react-bootstrap-table {
+  overflow-x: auto;
+}
+
+.react-bootstrap-table {
+  th {
+    outline: none;
+
+    &.sortable {
+      .svg-icon-sort {
+        opacity: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        .svg-icon-sort {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .table.table-head-custom thead tr {
+    .sortable-active {
+      color: $primary !important;
+    }
+  }
+}
+
+.cursor-default {
+  cursor: default !important;
+}
+
+.table-th-padding {
+  thead {
+    border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  }
+
+  th {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+  }
+}
+
+.PrintModalHeader {
+  text-align: center;
+
+  * {
+    margin: 0%;
+  }
+
+  h3,
+  h6 {
+    background-color: black;
+    color: #fff;
+  }
+}
+
+.headerInput {
+  width: 85%;
+  border: 1px solid #b5b5c3;
+  border-radius: 2px;
+  height: 22px;
+  outline: none;
+}
+
+.invoiceTableBody {
+  // background-color: aqua;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.MuiSwitch-colorSecondary.Mui-checked {
+  color: #ffff !important;
+}
+
+// .barCode {
+//   svg {
+//     height: 75px !important;
+//   }
+// }
+.tableCustomize {
+  thead {
+    tr {
+      font-size: 13px;
+    }
+  }
+}
+
+.ListBars {
+  .headerBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filterDrop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    .filterField {
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      width: 85%;
+      padding: 10px;
+      box-shadow: 0px 0px 25px -18px black;
+
+      .input {
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+      }
+    }
+  }
+}
+
+.GridDiv {
+  .itemsdiv {
+    height: 450px;
+  }
+}
+
+.BarModal {
+  // display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 70vh;
+  overflow-y: auto;
+
+  .printPaper {
+    width: 4.1in;
+
+    .right {
+      float: right;
+    }
+
+    .barCode {
+      width: 2in;
+      height: 1in;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+
+      svg {
+        margin: -8px;
+        width: 170px !important;
+      }
+
+      .proDet,
+      .price {
+        z-index: 9;
+      }
+
+      // background-color: blue;
+      .proDet {
+        // margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+
+        p {
+          font-size: 10px;
+          margin: 0px;
+        }
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+          font-size: 10px;
+          margin: 0px;
+        }
+      }
+    }
+  }
+}
+
+.addQuan {
+  display: flex;
+  align-items: center;
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .inputDrop {
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  button {
+    height: 20px;
+    width: 21px;
+    background-color: transparent;
+    border: 1px solid #00000036;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input {
+    height: 20px;
+
+    width: 30px;
+    border: 1px solid #00000036;
+    font-weight: bold;
+  }
+}
+
+.detailShop {
+  font-size: 11px;
+  margin-bottom: 5px;
+
+  .points {
+    font-size: 10px;
+    margin: 2px;
+  }
+}
+
+#salePrint {
+  overflow-y: scroll;
+  height: 80vh;
+}
+
+// .barCodeClass{
+//   width: 170px !important;
+// }
+.dashCircle {
+  color: #ff4500 !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.card-stretch .card-stretch-half .gutter-b {
+  height: calc(43% - 25px) !important;
+}
+
+.cashStats {
+  &:hover {
+    i {
+      transform: rotate(1080deg);
+    }
+  }
+
+  .statwid {
+    flex-direction: column !important;
+    align-items: center !important;
+
+    justify-content: space-evenly !important;
+
+    .innerStateHead {
+      flex-direction: row-reverse !important;
+      justify-content: space-between;
+    }
+
+    .cashBill {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #c9f7f5;
+      border-radius: 40px;
+      box-shadow: 0px 0px 13px -7px black;
+
+      i {
+        font-size: 25px;
+        color: #1bc5bd;
+        transition: 1.5s;
+        animation-name: round;
+        animation-duration: 4s;
+      }
+    }
+
+    .Bankstat {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e1f0ff;
+      border-radius: 40px;
+      box-shadow: 0px 0px 13px -7px black;
+
+      i {
+        font-size: 25px;
+        color: #3699ff;
+        transition: 1.5s;
+        animation-name: round;
+        animation-duration: 4s;
+      }
+    }
+
+    .AmountDash {
+      font-family: "Castoro", serif;
+    }
+  }
+}
+
+@keyframes round {
+  from {
+    transform: rotate(0deg);
+    opacity: 0.5;
+    font-size: 34px;
+  }
+
+  to {
+    transform: rotate(2160deg);
+    opacity: 1;
+    font-size: 25px;
+  }
+}
+.barSort {
+  background: transparent;
+  border: none;
+  color: #3699ff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  &:hover {
+    color: white;
+    background-color: #3699ff;
+  }
+}
